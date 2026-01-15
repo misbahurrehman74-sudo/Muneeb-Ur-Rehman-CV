@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Muneeb Ur Rehman</title>
+
+<style>
+/* GLOBAL */
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+/* HEADER BOX */
+.header-box{
+    background:#0f3c5f;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:18px;
+    margin-bottom:50px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:slideDown 1s ease forwards;
+}
+
+.header-box h1{
+    margin:0;
+    font-size:38px;
+    letter-spacing:1px;
+}
+
+.header-box p{
+    margin-top:10px;
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* CONTACT CARD */
+.contact-card{
+    background:white;
+    border-radius:16px;
+    padding:30px;
+    margin-bottom:35px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.1);
+    border-left:6px solid #0f3c5f;
+    display:flex;
+    align-items:center;
+    opacity:0;
+    animation:fadeUp 1s ease forwards;
+}
+
+.contact-card:nth-child(2){animation-delay:0.3s;}
+.contact-card:nth-child(3){animation-delay:0.5s;}
+
+.contact-card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:25px;
+    border:2px solid #0f3c5f;
+    animation:zoomIn 0.9s ease;
+}
+
+.contact-info h2{
+    margin:0 0 10px;
+    font-size:22px;
+    color:#0f3c5f;
+}
+
+.contact-info p{
+    margin:4px 0;
+    font-size:15px;
+}
+
+.contact-info a{
+    color:#0f3c5f;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.contact-info a:hover{
+    color:#1e6fa3;
+    text-decoration:underline;
+}
+
+/* EXTRA MESSAGE */
+.extra-msg{
+    text-align:center;
+    font-size:16px;
+    padding:25px 15px;
+    margin-top:20px;
+    background:#ffffff;
+    border-radius:16px;
+    border-left:6px solid #0f3c5f;
+    box-shadow:0 10px 28px rgba(0,0,0,0.1);
+    opacity:0;
+    animation:fadeUp 1.2s ease forwards;
+}
+
+/* BACK TO HOME */
+.back-home{
+    display:inline-block;
+    margin:40px 0 0 20px;
+    padding:11px 26px;
+    background:#0f3c5f;
+    color:white;
+    font-weight:600;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.25s ease;
+    animation:fadeUp 1.4s ease forwards;
+}
+
+.back-home:hover{
+    background:#1e6fa3;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transform:translateY(-3px);
+}
+
+/* ANIMATIONS */
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes zoomIn{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .header-box h1{font-size:28px;}
+    .header-box p{font-size:14px;}
+    .contact-card{flex-direction:column; align-items:flex-start; padding:22px;}
+    .contact-card img{margin-bottom:15px; margin-right:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header-box">
+        <h1>Contact</h1>
+        <p>Muneeb Ur Rehman | Electronics Engineer</p>
+    </div>
+
+    <!-- CONTACT CARD -->
+    <div class="contact-card">
+        <img src="profile.jpg" alt="Muneeb Ur Rehman">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>📞 Phone: 0335818910</p>
+            <p>✉ Email: <a href="mailto:muneeburrehman192002@gmail.com">muneeburrehman192002@gmail.com</a></p>
+            <p>🔗 LinkedIn: <a href="https://pk.linkedin.com/in/muneeb-ur-rehman-654997248" target="_blank">Muneeb Ur Rehman</a></p>
+        </div>
+    </div>
+
+    <!-- EXTRA MESSAGE -->
+    <div class="extra-msg">
+        <p>Thank you for visiting my profile! Feel free to reach out for collaborations, internships, or professional inquiries. I am always open to exploring exciting opportunities in electronics and industrial automation.</p>
+    </div>
+
+    <!-- BACK TO HOME -->
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+</div>
+
+</body>
+</html>

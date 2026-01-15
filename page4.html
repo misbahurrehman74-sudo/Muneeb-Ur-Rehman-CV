@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experience | Muneeb Ur Rehman</title>
+
+<style>
+/* GLOBAL */
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:45px auto;
+    padding:0 20px;
+}
+
+/* HEADER BOX */
+.header-box{
+    background:#0f3c5f;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:18px;
+    margin-bottom:50px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:slideDown 1s ease forwards;
+}
+
+.header-box h1{
+    margin:0;
+    font-size:38px;
+    letter-spacing:1px;
+}
+
+.header-box p{
+    margin-top:10px;
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* EXPERIENCE CARD */
+.exp-card{
+    background:white;
+    border-radius:16px;
+    padding:32px;
+    margin-bottom:38px;
+    border-left:7px solid #0f3c5f;
+    box-shadow:0 10px 28px rgba(0,0,0,0.1);
+    opacity:0;
+    animation:fadeUp 1s ease forwards;
+}
+
+.exp-card:nth-child(2){animation-delay:0.3s;}
+.exp-card:nth-child(3){animation-delay:0.5s;}
+.exp-card:nth-child(4){animation-delay:0.7s;}
+.exp-card:nth-child(5){animation-delay:0.9s;}
+
+.exp-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.18);
+    transition:0.3s ease;
+}
+
+/* LOGO */
+.exp-card img{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+    background:#fff;
+    padding:10px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    margin-bottom:15px;
+    animation:zoomIn 0.9s ease;
+}
+
+/* TITLES */
+.exp-card h2{
+    margin:10px 0;
+    font-size:22px;
+    color:#0f3c5f;
+}
+
+/* TEXT */
+.exp-card p{
+    margin:6px 0;
+    font-size:15px;
+    line-height:1.65;
+}
+
+/* LIST */
+.exp-card ul{
+    margin-top:12px;
+    padding-left:20px;
+}
+
+.exp-card ul li{
+    margin-bottom:7px;
+    font-size:14.5px;
+}
+
+/* BACK TO HOME */
+.back-home{
+    display:inline-block;
+    margin:45px 0 0 20px;
+    padding:11px 26px;
+    background:#0f3c5f;
+    color:white;
+    font-weight:600;
+    border-radius:25px;
+    text-decoration:none;
+    animation:fadeUp 1.2s ease forwards;
+}
+
+.back-home:hover{
+    background:#1e6fa3;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transform:translateY(-3px);
+}
+
+/* ANIMATIONS */
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes zoomIn{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .header-box h1{font-size:28px;}
+    .header-box p{font-size:14px;}
+    .exp-card{padding:24px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header-box">
+        <h1>Experience</h1>
+        <p>Muneeb Ur Rehman | Electronics Engineer</p>
+    </div>
+
+    <!-- CARD 1 -->
+    <div class="exp-card">
+        <img src="gtm.jpg">
+        <h2>Assistant Engineer</h2>
+        <p><strong>Company:</strong> Gul Ahmed Textile Mills Limited</p>
+        <p><strong>Duration:</strong> Aug 2025 – Present</p>
+        <p><strong>Location:</strong> Karachi · On-site</p>
+        <p>
+            Responsible for electrical maintenance of pretreatment textile machines,
+            ensuring reliability, safety, and uninterrupted production.
+        </p>
+        <ul>
+            <li>Electrical troubleshooting & diagnostics</li>
+            <li>PLC & VFD fault analysis</li>
+            <li>Preventive and predictive maintenance</li>
+            <li>Panel inspection & safety compliance</li>
+        </ul>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="exp-card">
+        <img src="samsung.jpg">
+        <h2>Engineer Intern</h2>
+        <p><strong>Company:</strong> Lucky Motor Corporation (Samsung)</p>
+        <p><strong>Duration:</strong> Aug 2024</p>
+        <p>
+            Worked in electronics division gaining hands-on experience
+            with industrial electronic systems.
+        </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="exp-card">
+        <img src="gtm.jpg">
+        <h2>Engineer Intern</h2>
+        <p><strong>Company:</strong> Gul Ahmed Textile Mills Limited</p>
+        <p><strong>Duration:</strong> Aug 2023 – Sep 2023</p>
+        <p>
+            Learned PLC basics, textile machinery operations,
+            and Arduino-based automation.
+        </p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="exp-card">
+        <img src="dg.jpg">
+        <h2>Engineer Intern</h2>
+        <p><strong>Company:</strong> DG Cement Company Limited</p>
+        <p><strong>Duration:</strong> Aug 2022</p>
+        <p>
+            Exposure to industrial electrical systems and heavy machinery maintenance.
+        </p>
+    </div>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+</div>
+
+</body>
+</html>

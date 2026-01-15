@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Muneeb Ur Rehman | CV</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f6f8;
+    color:#333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 120px 20px 60px 20px; /* Top padding for image overlap */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: relative;
+    z-index:1;
+}
+
+/* CV Full Form Blue Box Top Center */
+.cv-full-box {
+    display: inline-block;       /* Center */
+    position: relative;
+    background-color: #2c5364;
+    color: white;
+    font-size: 16px;             /* Thoda chhota */
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-full-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin:5px 0;
+    font-size:42px;
+    letter-spacing:1px;
+    text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+    position: relative;
+    z-index:2;
+}
+
+header p {
+    margin-top:8px;
+    font-size:18px;
+    position: relative;
+    z-index:2;
+}
+
+/* Profile Image */
+.profile-container {
+    max-width:900px;
+    margin:-70px auto 30px auto; /* Overlap header */
+    text-align:center;
+    position: relative;
+    z-index:3;
+}
+
+.profile-container img {
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container img:hover {
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Navigation */
+nav {
+    text-align:center;
+    margin:20px 0 40px 0;
+    position: relative;
+    z-index:2;
+}
+
+nav a {
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#2c5364;
+    padding:12px 22px;
+    margin:8px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid #2c5364;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    position:relative;
+    overflow:hidden;
+    transition: all 0.4s ease;
+}
+
+nav a::after {
+    content:'';
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:0;
+    height:0;
+    background:rgba(44,83,100,0.2);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    transition:width 0.5s ease, height 0.5s ease;
+    z-index:0;
+}
+
+nav a:hover::after {
+    width:300%;
+    height:300%;
+}
+
+nav a span {
+    position:relative;
+    z-index:1;
+}
+
+nav a:hover {
+    color:white;
+    background:#2c5364;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Introduction Card */
+.container {
+    max-width:900px;
+    margin:20px auto 40px auto;
+    padding:0 20px;
+    position: relative;
+    z-index:2;
+}
+
+.intro-card {
+    background:white;
+    padding:30px 30px 30px 25px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    line-height:1.7;
+    border-left:6px solid #2c5364;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.intro-card h2 {
+    color:#2c5364;
+    margin-top:0;
+    font-size:26px;
+    letter-spacing:0.5px;
+}
+
+/* Footer */
+footer {
+    text-align:center;
+    padding:15px;
+    background:#203a43;
+    color:white;
+    font-size:15px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+    margin-top:40px;
+}
+
+/* Responsive */
+@media (max-width:600px) {
+    header h1 { font-size:28px; }
+    header p { font-size:14px; }
+    .cv-full-box { font-size:16px; }
+    nav a { padding:8px 14px; font-size:14px; }
+    .profile-container img { width:120px; height:120px; }
+    .intro-card { padding:20px 20px 20px 18px; border-left:4px solid #2c5364; }
+    .intro-card h2 { font-size:22px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="cv-full-box">Curriculum Vitae</div>
+    <h1>Muneeb Ur Rehman</h1>
+    <p>Assistant Engineer | Electronics Professional</p>
+</header>
+
+<!-- Profile Image -->
+<div class="profile-container">
+    <img src="profile.jpg" alt="Muneeb Ur Rehman">
+</div>
+
+<!-- Navigation -->
+<nav>
+    <a href="page2.html"><span>Education</span></a>
+    <a href="page3.html"><span>Skills</span></a>
+    <a href="page4.html"><span>Experience</span></a>
+    <a href="page5.html"><span>Contact</span></a>
+</nav>
+
+<!-- Introduction -->
+<div class="container">
+    <div class="intro-card">
+        <h2>Introduction</h2>
+        <p>
+            I am an aspiring Electronic Engineer currently working as an Assistant Engineer at Gul Ahmed Textile Mills in the Electrical Maintenance department. 
+            I have completed my graduation from NED University. I also have hands-on experience through internships at DG Cement, Gul Ahmed Textile Mills, and Lucky Motors Cooperation (SAMSUNG). 
+            My core interests lie in VLSI design, IC fabrication processes, nano-technology, and photolithographic processing. 
+            I am passionate about exploring advanced semiconductor technologies and applying innovative solutions to modern electronics. 
+            With a strong foundation in circuit design and nano-scale fabrication, I am eager to contribute to cutting-edge technological advancements.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Muneeb Ur Rehman</p>
+</footer>
+
+</body>
+</html>

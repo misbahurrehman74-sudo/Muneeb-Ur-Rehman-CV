@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Skills | Muneeb Ur Rehman</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0; padding:0; background:#f4f6f9; color:#333;
+}
+
+/* HEADER BOX */
+.header-box{
+    background:#0f3c5f;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:18px;
+    margin:40px auto 50px auto;
+    max-width:900px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:slideDown 1s ease forwards;
+}
+
+.header-box h1{
+    margin:0; font-size:38px; letter-spacing:1px;
+}
+.header-box p{
+    margin-top:10px; font-size:16px; opacity:0.9;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:0 auto 50px auto;
+    padding:0 20px;
+}
+
+/* SKILL CARD */
+.skill-card{
+    background:white;
+    padding:25px 20px 25px 20px;
+    border-radius:16px;
+    border-left:6px solid #0f3c5f;
+    box-shadow:0 10px 28px rgba(0,0,0,0.12);
+    margin-bottom:25px;
+    display:flex;
+    align-items:flex-start;
+    opacity:0;
+    animation:fadeUp 1s ease forwards;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:nth-child(1){animation-delay:0.2s;}
+.skill-card:nth-child(2){animation-delay:0.4s;}
+.skill-card:nth-child(3){animation-delay:0.6s;}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.skill-icon{
+    font-size:30px;
+    margin-right:20px;
+    color:#0f3c5f;
+}
+
+.skill-content h3{
+    margin-top:0;
+    color:#0f3c5f;
+    font-size:22px;
+}
+.skill-content ul{
+    margin:8px 0;
+    padding-left:20px;
+}
+.skill-content li{
+    margin-bottom:6px;
+    position:relative;
+    padding-left:15px;
+}
+.skill-content li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#0f3c5f;
+    font-weight:bold;
+}
+
+/* BACK TO HOME */
+.back-home{
+    display:inline-block;
+    margin:30px 0 0 20px;
+    padding:11px 26px;
+    background:#0f3c5f;
+    color:white;
+    font-weight:600;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.25s ease;
+    animation:fadeUp 1.4s ease forwards;
+}
+.back-home:hover{
+    background:#1e6fa3;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#203a43;
+    color:white;
+    font-size:15px;
+    box-shadow:0 -4px 10px rgba(0,0,0,0.2);
+}
+
+/* ANIMATIONS */
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .header-box h1{font-size:28px;}
+    .header-box p{font-size:14px;}
+    .skill-card{flex-direction:column; align-items:flex-start; padding:18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header-box">
+        <h1>Skills</h1>
+        <p>Muneeb Ur Rehman | Electronics Professional</p>
+    </div>
+
+    <!-- Skill Card 1 -->
+    <div class="skill-card">
+        <div class="skill-icon">💡</div>
+        <div class="skill-content">
+            <h3>Industry Knowledge</h3>
+            <ul>
+                <li>Electronics Troubleshooting</li>
+                <li>Digital Control System</li>
+                <li>Data Analysis</li>
+                <li>VLSI Design Concepts</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skill Card 2 -->
+    <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-content">
+            <h3>Tools & Technologies</h3>
+            <ul>
+                <li>Arduino</li>
+                <li>Simulink</li>
+                <li>MATLAB</li>
+                <li>AutoCAD</li>
+                <li>Microsoft Excel, Word, PowerPoint</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skill Card 3 -->
+    <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-content">
+            <h3>Projects / Hands-on Experience</h3>
+            <ul>
+                <li>Raspberry Pi Projects</li>
+                <li>Arduino Based Circuits & Control Systems</li>
+                <li>PLC Programming (Gul Ahmed Textile Internship)</li>
+                <li>Data Acquisition & Analysis</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Home -->
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+</div>
+
+<footer>
+    <p>© 2026 Muneeb Ur Rehman</p>
+</footer>
+
+</body>
+</html>
